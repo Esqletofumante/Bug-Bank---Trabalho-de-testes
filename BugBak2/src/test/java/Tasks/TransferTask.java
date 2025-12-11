@@ -3,6 +3,7 @@ package Tasks;
 import org.openqa.selenium.WebDriver;
 
 import Framework.Utils.AccountData;
+import Framework.Utils.TirarFoto;
 import PageObjects.BugBankHomePage;
 import PageObjects.BugBankTransferPage;
 import PageObjects.HomePage;
@@ -32,7 +33,7 @@ public class TransferTask {
 
         
         // Login com conta 1
-        
+        TirarFoto.stepComFoto(driver, "Realizando Login da conta 1");
         homePage.getCampoEmail().sendKeys(AccountData.getEmail1());
         homePage.getCampoSenha().sendKeys(AccountData.getPassword1());
         homePage.getBotaoAcessar().click(); // botão "Acessar"
@@ -53,7 +54,7 @@ public class TransferTask {
 
         
         // Preencher dados da transferência
-        
+        TirarFoto.stepComFoto(driver, "Realizando a transferencia para a conta 2");
         transferPage.getCampoNumeroConta().sendKeys(numeroConta);
         transferPage.getCampoDigito().sendKeys(digitoConta);
         transferPage.getCampoValor().sendKeys("100");  // valor fixo ou variável

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import Framework.Browser.Waits;
 import Framework.Utils.AccountData;
+import Framework.Utils.TirarFoto;
 import PageObjects.BugBankHomePage;
 import PageObjects.HomePage;
 import Validacao.ValidacaoLogin;
@@ -33,6 +34,7 @@ public class BugBankExtratoTask {
         String password = AccountData.getPassword2();
 
         // Login
+        TirarFoto.stepComFoto(driver, "Realizando Login da conta 2");
         waits.loadElement(homePage.getCampoEmail());
         homePage.getCampoEmail().sendKeys(email);
 
@@ -46,6 +48,7 @@ public class BugBankExtratoTask {
         waits.loadElement(bugBankHomePage.getBotaoExtrato());
 
         // Abrir o extrato
+        TirarFoto.stepComFoto(driver, "Realizando a verificação do extrato");
         bugBankHomePage.getBotaoExtrato().click();
 
         

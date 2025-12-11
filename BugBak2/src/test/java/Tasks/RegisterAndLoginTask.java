@@ -3,6 +3,7 @@ package Tasks;
 import org.openqa.selenium.WebDriver;
 
 import Framework.Utils.AccountData;
+import Framework.Utils.TirarFoto;
 import PageObjects.BugBankHomePage;
 import PageObjects.HomePage;
 import PageObjects.RegisterPage;
@@ -51,6 +52,7 @@ public class RegisterAndLoginTask {
         homePage.getBotaoRegistrar().click();
 
         //  Preencher o cadastro 
+        TirarFoto.stepComFoto(driver, "Realizando Cadastro das duas contas");
         registerPage.getCampoEmail().sendKeys(email);
         registerPage.getCampoNome().sendKeys("Usuário Teste");
         registerPage.getCampoSenha().sendKeys(senha);
@@ -68,9 +70,10 @@ public class RegisterAndLoginTask {
         homePage.getBotaoFecharModal().click();
 
         // Preenche login na tela inicial 
+        TirarFoto.stepComFoto(driver, "Realizando o Login");
         homePage.getCampoEmail().sendKeys(email);
         homePage.getCampoSenha().sendKeys(senha);
-        homePage.getBotaoAcessar().click(); // aqui o botão "Cadastrar" vira "Acessar" no modal
+        homePage.getBotaoAcessar().click(); // aqui Acessar no modal
         validacaoLogin.validarLoginRealizado();
 
         //  Captura o número da conta 
