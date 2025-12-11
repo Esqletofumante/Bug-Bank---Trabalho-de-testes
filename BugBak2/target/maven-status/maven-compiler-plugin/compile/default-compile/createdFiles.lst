@@ -1,0 +1,10 @@
+Framework\Browser\DriverManager.class
+Framework\Utils\AccountData.class
+Framework\TestBase.class
+Framework\Utils\FakersGeneration.class
+Framework\Browser\DriverManager$1.class
+Framework\Browser\TypeBrowser.class
+Framework\Browser\Waits.class
+Framework\Utils\DataClass.class
+Framework\Utils\FileOperations.class
+Framework\Utils\TakeScreenshot.class

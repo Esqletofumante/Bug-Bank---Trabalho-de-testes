@@ -1,0 +1,14 @@
+Validacao\ValidacaoTransferencia.class
+PageObjects\RegisterPage.class
+PageObjects\GenericPage.class
+TestCases\RealizarCompraSucessoDataClassTest.class
+Tasks\RegisterAndLoginTask.class
+Tasks\BugBankExtratoTask.class
+PageObjects\HomePage.class
+TestSuites\AllTests.class
+PageObjects\BugBankHomePage.class
+Validacao\ValidacaoCadastro.class
+PageObjects\LoginPage.class
+PageObjects\BugBankTransferPage.class
+Tasks\TransferTask.class
+Validacao\ValidacaoLogin.class
